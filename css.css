@@ -1,0 +1,960 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family:'Source Sans Pro', sans-serif; ;
+}
+p, a, li,button
+{
+    font-family:'Roboto', sans-serif; ;
+}
+hr
+{
+    border: none;
+    border-top: 1px dashed #55555582;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.clear-fix
+{
+    clear: both;
+}
+
+
+.navbar 
+{
+    background-color: aliceblue;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.831) ;
+    z-index: 99999;
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 200px ;
+
+
+}
+
+.logo a
+{
+    padding: 20px 0px;
+    color: #ff305b;
+    font-family: 'Roboto', sans-serif ;
+    font-size: 24px;
+    font-weight: 800;
+    display: block;
+    
+}
+
+.navbar ul
+{
+
+    display:flex;
+
+
+}
+.navbar li
+{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 27px;
+
+}
+.navbar li a
+{
+    color: #ffffff;
+    transition: color 1s;
+}
+.navbar li a:hover
+{
+    color: #ff305b;
+}
+
+
+@media screen and  (max-width:768px)
+{
+    .navbar
+
+    {
+
+        justify-content: space-around;
+    }
+
+    .logo a
+    {
+        padding: 0;
+    }
+
+    .navbar li
+    {
+        margin: 4px;
+    }
+   
+}
+
+
+/*             _______ ____________ _______________ _____________        */
+
+.table
+{
+    background-image: url(photos/slider/slider-01.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center center ;
+    position: relative;
+
+    
+}
+.layer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.831);
+}
+.slider-text
+{
+    text-align: center;
+    
+}
+.slider-text h3
+{
+    margin: 10px;
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-weight:600;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+
+.slider-text h1
+{
+    margin: 10px;
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-weight:700;
+    font-size: 70px;
+    Color:#ff305b;
+    line-height:77px;
+
+}
+.slider-text h4
+{
+    margin: 10px;
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-weight:300;
+    font-size: 26px;
+    Color:#ffffff;
+    
+}
+@media screen and  (max-width:768px)
+{
+    .slider-text h1
+    {
+        font-size: 40px;
+    }
+}
+
+
+
+
+/*             ________ ________ __________ ___________ __________        */
+
+
+/* section2 */
+
+
+.about-area
+{
+    padding: 100px 0px 125px;
+}
+.about-container
+{
+    margin: auto;
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+
+.photo
+{
+
+    border-radius: 2%;
+    border: solid 7px rgb(64, 63, 63);
+    position: relative;
+}
+.photo-profile
+{
+   
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+
+}
+.photo-profile img
+{
+    border-radius: 1.5%;
+}
+
+.icon-layer
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:102%;
+    left: 0px;
+    opacity: 0.7;
+    background-color: black;
+    border-radius: 1.5%;
+    transition: top 0.7s;
+}
+.icon-layer h3
+{
+    color: #ff305b;
+    text-align: center;
+    margin: 3px;
+}
+
+
+.photo-profile:hover .icon-layer
+{
+    top:0%;
+
+}
+
+.discription
+{
+    padding: 20px  20px;
+    width:50%;
+}
+
+.discription h2
+{
+    margin:15px  0px;
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 22px;
+    color: #333333;
+    position: relative;
+}
+
+.discription h2::before
+{
+    content: ' ';
+    position: absolute;
+    top:0px;
+    left: -10px;
+    height: 25px;
+    width: 5px;
+    background-color: #ff305b;
+}
+
+.discription p
+{
+    font-family:  'Roboto', sans-serif;
+    font-weight: 400;
+    color:#555555;
+    margin:10px 0px;
+
+}
+
+.discription .id
+{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.discription li span
+{
+    font-family:  'Roboto', sans-serif;
+    font-weight: 500;
+    color:#333333 ;
+     
+}
+.discription li
+{
+    font-family:  'Roboto', sans-serif;
+    font-weight: 400;
+    color:#555555 ;
+    margin: 20px 0px;
+}
+.discription button
+{
+    font-family:  'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    padding:  10px 20px;
+    border:none;
+    margin: 10px;
+    background-color: #ff305b;
+    color: #ffffff;
+    transition: background-color 1s;
+    border-radius: 5px;
+    
+}
+.discription button:hover
+{
+    background-color: red;
+}
+
+
+@media screen and  (max-width:768px) {
+    
+
+    .about-area
+    {
+        padding: 50px 0px;
+    }
+    .photo-profile
+    {
+        top:0;
+        left: 0;
+    }
+    .photo-profile,.discription,.about-container
+    {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .photo
+    {
+        border:none;
+
+    }
+   
+   
+    
+}
+
+
+
+
+/*             ____ ___________ _____________ ___________ ________        */
+
+/* section3 */
+
+.continer-services
+{
+    background-color: rgba(192, 192, 194, 0.492);
+    padding: 70px;
+}
+.continer-services h2
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333333;
+    margin: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif ;
+
+
+}
+
+.continer-services h2::after
+{
+    content:'';
+    width:100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 65px;
+    left: 46%;
+
+
+}
+
+.continer-services h2::before
+{
+    content:'';
+    width:180px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 69px;
+    left: 43.5%;
+}
+
+
+.services
+{
+    margin: auto;
+    width: 90%;
+    display: flex;
+}
+
+
+.services .item
+{
+    padding: 40px 20px;
+    transition: background-color 1s;
+    text-align: center;
+    
+}
+
+.services .item:hover
+{
+    background-color: #ffffff;
+}
+.services .item h3
+{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #333333;
+    padding-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif ;
+
+}
+
+.services .item p
+{
+    color: #555555;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 20px;
+    font-family:  'Roboto', sans-serif;
+
+}
+
+@media screen and  (max-width:768px)
+{
+
+    .continer-services
+    {
+        padding: 10px;
+    }
+    .services .item
+    {
+        width: 100%;
+        
+    }
+    .services
+    {
+        width: 100%;
+        flex-wrap: wrap;
+
+
+    }
+
+    .continer-services h2::before
+    {
+        left: 15%;
+    }
+    .continer-services h2::after
+    {
+        left: 28%;
+    }
+}
+
+
+
+/*                   ________ __________ ____________ ________ */
+/* section4 */
+
+.container-portfolio
+{
+    padding: 70px;
+}
+
+.portfolio
+{
+    margin: auto;
+}
+
+.portfolio h2
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333333;
+    margin: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif ;
+
+
+}
+
+.portfolio h2::after
+{
+    content:'';
+    width:100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 65px;
+    left: 46%;
+
+
+}
+
+.portfolio h2::before
+{
+    content:'';
+    width:180px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 69px;
+    left: 43.5%;
+}
+
+.portfolio ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio ul li
+{
+    padding: 20px;
+
+}
+
+.portfolio ul li a
+{
+    color: #333333;
+}
+
+.photos
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-content:space-around;
+    flex-wrap: wrap;
+}
+
+.photos .photo-item
+{
+    width: 31.5%;
+    margin-top: 10px;
+    margin-bottom:20px ;
+
+    
+}
+
+
+
+.photos .photo-item img
+{
+    width: 100%;
+    color: #333333;
+    transition: transform 0.7s;
+}
+.photo-item img:hover 
+{
+    
+    transform: scale(1.1);
+
+}
+
+
+
+
+@media screen and  (max-width:768px)
+{
+   
+    .container-portfolio
+    {
+        padding: 10px;
+    }
+    .photos
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+    .photos .photo-item
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .portfolio h2::before
+    {
+        left: 15%;
+    }
+    .portfolio h2::after
+    {
+        left: 28%;
+    }
+}
+
+
+/*             _______________________________________________        */
+
+/* section4 */
+
+.Blog
+{
+    padding:80px 0px;
+    background-color: #f1f1f1; 
+}
+
+.Blog h2
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333333;
+    margin: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif ;
+    
+}
+
+.Blog h2::after
+{
+    content:'';
+    width:100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 64px;
+    left: 46.5%;
+
+
+}
+
+.Blog h2::before
+{
+    content:'';
+    width:180px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 69px;
+    left: 44%;
+}
+
+.blog-container
+{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.blog-item
+{
+    margin: 15px;
+    background-color: #ffffff;
+    
+}
+
+.blog-item .image
+{
+    width: 100%;
+}
+
+.blog-item .image img ,.blog-item .image iframe
+{
+    width: 100%;
+}
+
+.blog-item .date
+{
+    line-height: 25px;
+    font-weight: 400;
+    color: #555555;
+    font-family: Roboto, sans-serif;
+    margin: 15px;
+}
+
+
+.blog-item h3
+{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    color: black;
+    font-weight: 600;
+    margin: 15px;
+}
+
+.blog-item h3:hover
+{
+    color: #ff305b;
+}
+
+.blog-item p
+{
+    margin: 15px;
+    line-height: 25px;
+    color: #555555;
+    padding-right: 50px;
+
+}
+
+
+.blog-item button
+{
+    line-height: 25px;
+    border: none;
+    margin: 15px;
+    padding: 2px;
+    transition: color 0.5s,text-decoration 1s;
+    position: relative;
+    background-color:#ffffff;
+
+}
+
+
+
+
+.blog-item button:hover
+{
+    color: #ff305b;
+    text-decoration: underline;
+}
+
+
+@media screen and  (max-width:768px)
+{
+   
+    .blog-container
+    {
+    width: 100%;
+    flex-wrap: wrap;
+    }
+    .blog-item
+    {
+        width: 100%;
+    }
+
+    .Blog h2::before
+    {
+        left: 30%;
+    }
+    .Blog h2::after
+    {
+        left: 40%;
+    }
+}
+
+
+/*           __________ __________ _____________ ____________        */
+
+/* section6 */
+
+
+.contact-us
+{
+    padding: 80px 0px;
+    background-color: #ffffff;
+}
+.contact-us h2
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333333;
+    margin: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif ;
+    
+}
+
+.contact-us h2::after
+{
+    content:'';
+    width:100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 64px;
+    left: 46.5%;
+
+
+}
+
+.contact-us h2::before
+{
+    content:'';
+    width:180px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 69px;
+    left: 44%;
+}
+.contact-us .contact-container
+{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-us .contact-container form 
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+.contact-container form .n-e
+{
+    width: 35%;
+    height: 45px;
+    margin: 30px 10px;
+    border: solid 1px  #838282;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(113, 112, 112, 0.178);
+
+}
+
+.contact-container form .sub
+{
+    width: 72.5%;
+    height: 45px;
+    margin-bottom: 30px;
+    border: solid 1px  #838282;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(113, 112, 112, 0.178);
+
+    
+}
+
+.contact-container form textarea
+{
+    margin-bottom: 15px;
+    border: solid 1px #968e8e;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(113, 112, 112, 0.178);
+
+    
+
+
+}
+
+
+
+.contact-container button
+{
+    font-family:  'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    padding:  10px 20px;
+    border:none;
+    margin: 10px;
+    background-color: #ff305b;
+    color: #ffffff;
+    transition: background-color 1s;
+    border-radius: 5px;
+    
+    
+}
+
+.contact-container button:hover
+{
+    background-color: red;
+}
+
+
+
+
+@media screen and  (max-width:768px)
+{
+   
+    .contact-us .contact-container
+    {
+        width: 100%;
+        margin:0%;
+    }
+    .contact-us .contact-container form 
+    {
+        width: 95%;
+        margin: 0;
+    }
+    .contact-container form .sub,.contact-container form .n-e
+    {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .contact-container form  textarea
+    {
+        width: 100%;
+        margin: 10px;
+    }
+
+
+    .contact-us h2::before
+    {
+        left: 30%;
+    }
+    .contact-us h2::after
+    {
+        left: 40%;
+    }
+}
+/*               ___________ ______________ _________________ */
+
+/* section6 */
+
+
+
+.copywrite
+{
+    background-color: #333333;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+.copywrite p
+{
+    padding: 40px;
+    color: #ffffff;
+}
+
+.copywrite .made
+{
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 20px; 
+}
+
+
+.copywrite a
+{
+    margin-top: 20px;
+    color: #e17194;
+    
+}
+
+.copywrite a:hover
+{
+    color: #ff305b;
+}
