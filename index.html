@@ -9,29 +9,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="css.css" >
 </head>
 
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#">Fokir</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+             
+              <li class="nav-item">
+                <li><a class="nav-link  " href="#home">Home</a></li>
+              </li>
+              <li class="nav-item">
+                <li><a class="nav-link" href="#about">About</a></li>
+              </li>
+              <li class="nav-item">
+                <li><a class="nav-link" href="#services">Services</a></li>
+              </li>
+              <li class="nav-item">
+                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              </li>
+              <li class="nav-item">
+                <li><a class="nav-link" href="#blog">Blog</a></li>
+              </li>
+              <li class="nav-item">
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
 
     
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">Fokir</a>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        
-    </nav>
-    
-    <header class="table">
+    <header class="table "id="home">
         <div class="layer">
             <div class="slider-text">
                 <h3>Hello i'm</h3>
@@ -213,7 +234,7 @@
             <br>
             <input type="text" class="sub" name="subject" id="subject" placeholder="  Subject" required>
             <br/>
-            <textarea name="message" id="message" cols="80" rows="6" placeholder="  Message for me " required></textarea>
+            <textarea name="message" id="message" cols="89" rows="6" placeholder="  Message for me " required></textarea>
             <br/>
             <button type="submit" >SEND MESSAGE</button>
         </form>
@@ -231,6 +252,6 @@
     <br>
     <a href="https://github.com/Ahmed-Shaltout3g" target="_blank"> Git hub</a>
 </section>
-
+<script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

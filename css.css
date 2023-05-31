@@ -41,14 +41,14 @@ hr
     z-index: 99999;
     display:flex;
     justify-content: space-between;
-    padding: 0px 200px ;
+    padding: 0px 50px ;
 
 
 }
 
-.logo a
+.navbar-brand 
 {
-    padding: 20px 0px;
+    padding: 10px 0px;
     color: #ff305b;
     font-family: 'Roboto', sans-serif ;
     font-size: 24px;
@@ -57,16 +57,16 @@ hr
     
 }
 
-.navbar ul
+/* .navbar ul
 {
 
     display:flex;
 
 
-}
+} */
 .navbar li
 {
-    margin: 20px;
+    margin: 10px;
     font-family: 'Roboto', sans-serif ;
     font-weight: 300;
     color: #ffffff;
@@ -83,27 +83,7 @@ hr
     color: #ff305b;
 }
 
-
-@media screen and  (max-width:768px)
-{
-    .navbar
-
-    {
-
-        justify-content: space-around;
-    }
-
-    .logo a
-    {
-        padding: 0;
-    }
-
-    .navbar li
-    {
-        margin: 4px;
-    }
-   
-}
+/* 
 
 
 /*             _______ ____________ _______________ _____________        */
